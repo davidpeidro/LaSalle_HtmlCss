@@ -1,0 +1,484 @@
+/* Parte común */
+
+:root {
+    --morado: rgba(97, 69, 140, 255);
+    --morado-fondo-form: rgba(121, 98, 158, 255);
+    --gris-h: rgba(78, 78, 78, 255);
+    --gris-p: rgba(135, 135, 135, 255);
+    --gris-circulo: rgba(211, 211, 211, 255);
+    --crema-fondo: rgba(242, 242, 242, 255);
+    --blanco-h1: rgba(255, 255, 255, 255);
+}
+
+body {
+    font-family: 'Open Sans';
+    width: 1024px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 4.5 rem;
+    color: var(--blanco-h1);
+    text-align: left;
+    margin: 0;
+    position: absolute;
+    bottom: 40%;
+    padding-left: 2rem;
+}
+
+h2 {
+    font-size: 3rem;
+    color: var(--gris-h);
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--gris-h);
+}
+
+p {
+    color: var(--gris-p);
+}
+
+/* Parte Judith - Sección Header */
+
+header {
+    background-image: url("../img/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover, auto;
+    width: 100%;
+    height: 25rem;
+    background-position: 50%;
+    position: relative;
+}
+
+nav {
+    background-color: var(--morado);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+nav li:nth-child(1){
+    margin-left: 1rem;
+}
+
+ul {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 1rem;
+    color: var(--blanco-h1);
+    text-decoration: none;
+
+}
+
+a:hover {
+   background-color: var(--blanco-h1);
+   color: var(--morado);
+}
+
+/* Parte Lucía - Sección Who We Are */
+
+.who {
+    background-color: var(--crema-fondo);
+    flex-direction: row;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    display: block;
+    margin: auto;
+}
+
+.who h2 {
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.column1 {
+    float: left;
+    width: 48%;
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+.left {
+    display: inline-block;
+    width: 48%;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: left;
+    line-height: 2rem;
+}
+
+.box1 {
+    text-align: justify;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.box1 img {
+    width: 30%;
+    float: left;
+    margin-right: 0.5rem;
+}
+
+.line {
+    width: 1px;
+    height: 890px;
+    display: inline-block;
+    background-color: rgb(194, 193, 193);
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.column2 {
+    float: right;
+    width: 48%;
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+.right {
+    display: inline-block;
+    width: 48%;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: left;
+    line-height: 2rem;
+}
+
+.box2 {
+    text-align: justify;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+aside img {
+    margin-left: 3rem;
+    margin-bottom: 0rem;
+    margin-top: 0.5rem;
+    margin-right: 0rem;
+    width: 80%;
+}
+
+/* Parte Antonio - Sección Our Services */
+
+.services-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3rem;
+    row-gap: 3rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.services-list div {
+    display: inline-block;
+    justify-self: end;
+}
+
+.services-list li {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+}
+
+.services-list article {
+    display: inline-block;
+}
+
+.services-list article h3 {
+    margin-top: 0%;
+}
+
+.services-list article p {
+    text-align: justify;
+    font-size: small;
+}
+
+.services-list span>i:nth-child(1) {
+    color: var(--gris-circulo);
+    transition: color .5s;
+    transition-timing-function: ease-in-out;
+}
+
+.services-list span:hover :nth-child(1) {
+    display: none;
+}
+
+.services-list span>i:nth-child(2) {
+    color: var(--morado);
+    transition: color .5s;
+}
+
+.services-list span:hover :nth-child(2) {
+    color: white;
+}
+
+.services-list span>i:nth-child(3) {
+    color: white;
+    opacity: 0;
+    transition: opacity .5s ease-out;
+}
+
+.services-list span:hover :nth-child(3) {
+    opacity: 1;
+    z-index: -1;
+    color: var(--morado);
+}
+
+/* Parte David - Sección Portfolio */
+
+.Portfolio-Section {
+    background-color: var(--crema-fondo)
+}
+
+.Portfolio-Section p {
+    text-align: center;
+}
+
+.portfolio-image-grid {
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Portfolio-Image {
+    height: 154px;
+    width: 240px;
+    align-self: end;
+}
+
+.Portfolio-Image:hover {
+    transform: rotate(-20deg);
+    transition-duration: 1s;
+}
+
+.Portfolio-ImageSpecial {
+    height: 154px;
+    width: 240px;
+}
+
+.Portfolio-ImageSpecial:hover {
+    transform: rotate(360deg);
+    transition-duration: 1s;
+    border-radius: 260px;
+}
+
+/* Parte Antonio - Sección Location */
+
+.location-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.location-section h2 {
+    margin: 0;
+    width: 100%;
+}
+
+.location-section h4 {
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+}
+
+.location-section p {
+    width: 75%;
+    color: var(--gris-h);
+}
+
+.location-section>p {
+    width: 100%;
+    text-align: center;
+    color: var(--gris-p);
+}
+
+.location-section iframe {
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+/* Parte Rocío - Sección Email Us */
+
+.emailUsForm {
+    background-color: rgba(121, 98, 158, 255);
+    background-image: url(../img/map-image.png);
+    background-size: 1024px;
+    size: 1024px;
+    padding-bottom: 30px;
+}
+
+.emailUsForm h2 {
+    font-family: "Open Sans";
+    color: white;
+    font-size: 2.5em;
+    font-weight: 550;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.emailUsForm div {
+    display: flex;
+    justify-content: center;
+    margin: 0.5em 0 0.5em 0;
+}
+
+.emailUsForm input[type="text"] {
+    width: 25%;
+    height: 50%;
+    padding: 0.5em;
+    border-radius: 5px;
+    border-color: white; 
+}
+
+.emailUsForm label {
+    width: 15%;
+    font-size: 1.3em;
+    color: white;
+    text-align: left;
+}
+
+.emailUsForm textarea {
+    width: 25%;
+    height: 5em;
+    padding: 0.5em;
+    border-radius: 5px;
+    border-color: white;
+}
+
+.emailUsForm input[type="submit"] {
+    width: 11%;
+    font-size: 1em;
+    border-radius: 5px;
+    border-color: white;
+    padding: 0.1em;
+    margin: 1.5em;
+}
+
+/* Parte David - Sección Footer */
+
+.Footer-Section {
+    margin: 0;
+    background-color: var(--morado);
+    text-align: right;
+    color: rgba(255, 255, 255, 255);
+    border-color: var(--morado);
+    font-size: 0.8em;
+}
+
+.Footer-Link {
+    color: rgba(255, 255, 255, 255);
+    padding-top: 1rem;
+    margin: 0;
+}
+
+
+/* Carrousel temps */
+
+.divWeather
+{
+    display:flex;
+    justify-content: space-evenly;
+    height: 3em;
+    text-align: start;
+    align-items: center;
+    background: #eecb8a;
+    /* El scroll se mantiene oculto, los divs hijos se mantienen*/
+    overflow: hidden;
+    width: 100%;
+}
+
+.divInfo
+{
+    display:flex;
+    justify-content: space-evenly;
+    height: 3em;
+    text-align: start;
+    align-items: center;
+    background: #eecb8a;    
+    overflow: hidden;
+    width: 90%;
+}
+
+/* a tots els divs fills (que contenen les dades trossejades), del div "pare" */
+div#divLocation,
+div#divImatge,
+div#divTemperatura,
+div#divTempMin,
+div#divTempMax,
+div#divHumitat
+{
+    animation-name: animation_weather ;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* Cada vez que termina el ciclo, la animacion se reinicia al.. y comienza desde el principio. Este es el comportamiento por defecto. */
+    animation-direction: normal;
+    position: relative;
+}
+
+@keyframes animation_weather {
+    0%{ right: -100%;}
+    100%{ right: 100%;}
+}
+
+#closeCarrousel {   
+    position:relative; 
+    vertical-align: top;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    /*display:inline;
+    padding:2px 5px;*/
+    background:#eecb8a;
+    cursor: pointer;
+    /*display:flex;*/
+    width: 10%;
+  justify-content: flex-end;
+}
+
+/* game */
+
+.game {
+
+    background-image: url("../img/fondo-pregunta-02.png");
+    background-repeat: no-repeat;
+    background-size: cover, auto;
+    width: 100%;
+    height: 15rem;
+    background-position: 50%;
+    position: relative;
+}
+
+.answerButton
+{
+    /**/
+}

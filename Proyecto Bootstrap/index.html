@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Business Webpage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+  <script src="./Javascript/TeclatMarges.js"></script>
+</head>
+
+<body>
+  <script src="./Javascript/Temps.js"></script>
+  <!-- Parte Judith - Sección Header -->
+  <header class="container">
+    <div class="banner">
+      <h1 class="col">My Business Webpage</h1>
+    </div>
+
+    <!-- Carrousel del temps -->
+    <div class="container weather" id="divMeteoPare">
+      <div id="divLocation"></div>
+      <div id="divImatge"></div>
+      <div id="divTemperatura"></div>
+      <div id="divTempMin"></div>
+      <div id="divTempMax"></div>
+      <div id="divHumitat"></div>
+      <div id="divClose">
+        <p id="closeCarrousel" style="float: right;">x</p>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+
+
+      <div class="container">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Who we are">Who we are?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Our Services">Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Location">Location</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#EmailUs">Email Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    
+
+    <!-- Parte Lucía - Sección Who We Are-->
+    <section class="container justify-content-center">
+      <div class="who">
+        <h2><a name="Who we are" id="Who whe are"></a>Who we are?</h2>
+        <!--<h2><a name="Location" id="Location"></a>Location</h2>-->
+        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis <br> magna sit
+          amet diam euismod malesuada.</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-12 col-md-2 col-xl-5">
+          <h3 class="col align-self-start">Lorem ipsum</h3>
+          <p class="text-justify"><img id="foto1" src="img/1.jpg" class="img-fluid" alt="muñeco en cohete">Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit.
+            Pellentesque eros sem, interdum pulvinar quam sit amet, vestibulum congue tortor. Aenean pretium malesuada
+            lorem nec faucibus. Nunc convallis ex sit amet justo posuere, vitae fringilla tellus consequat. Maecenas
+            eget
+            semper tellus, consectetur volutpat eros. Integer ultricies vitae quam eget tempus. Vivamus sit amet massa
+            vel
+            ligula ullamcorper varius. In scelerisque augue urna, vel mollis lectus cursus sit amet. Aliquam risus
+            dui,
+            luctus
+            at leo sit amet, sodales vulputate nulla. Aliquam tristique ultricies nunc, ut luctus metus blandit in.
+            Integer
+            lectus sem, gravida ac nisl vel, fermentum tempor ipsum. Suspendisse vitae laoreet augue. Proin lacinia
+            nec
+            neque nec condimentum. Cras varius diam a arcu euismod, eu ullamcorper augue feugiat. Praesent fermentum
+            purus
+            justo, ut sodales
+            turpis pretium in. Cras varius diam a arcu euismod, eu ullamcorper augue feugiat. Praesent fermentum purus
+            justo, ut sodales turpis pretium in. Cras varius diam a arcu euismod, eu ullamcorper augue feugiat. In
+            dapibus
+            eleifend
+            ultrices. Fusce tempor in nisi eu mattis. Suspendisse tellus risus. Fusce tempor in nisi eu mattis.
+            Suspendisse tellus risus. Suspendisse tellus. Cras varius diam a arcu euismod, eu ullamcorper augue
+            feugiat.</p>
+        </div>
+        <div class="vhr col-2 d-none d-lg-block"></div>
+        <div class="col-md-12 col-md-2 col-xl-5">
+          <h3 class="col align-self-end">Lorem ipsum</h3>
+          <p class="text-justify"><img id="foto2" src="img/ad.jpg" class="img-fluid" alt="amazon webstore">Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Sed a
+            rutrum ante. Morbi at molestie diam. Donec consectetur enim felis. In dapibus eleifend ultrices. Fusce
+            tempor
+            in nisi eu mattis. Suspendisse tellus
+            risus, ultricies in neque eu, commodo iaculis augue. Mauris venenatis purus nisl, a elementum velit
+            pharetra eget. Mauris venenatis purus nisl, a elementum velit
+            pharetra eget.</p>
+          <h3 class="col align-self-end">Lorem ipsum</h3>
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a
+            rutrum ante. Morbi
+            at molestie diam. Donec
+            consectetur enim felis. In dapibus eleifend ultrices. Fusce tempor in nisi eu mattis. Suspendisse tellus
+            risus, ultricies in neque eu, commodo iaculis augue. Mauris venenatis purus nisl, a elementum velit
+            pharetra eget. Mauris venenatis purus nislpurus nisl. Mauris venenatis purus nislpurus nisl.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Parte Antonio - Sección Our Services -->
+    <section class="services-section container">
+
+      <h2 class="col"><a name="Services" id="Services"></a>Our Services</h2>
+
+      <div class="row">
+
+        <article class="col-lg-4 row">
+          <div class="col-3">
+            <span class="fa-stack fa-2xl">
+              <i class="fa-regular fa-circle fa-stack-2x"></i>
+              <i class="fa-solid fa-cloud fa-stack-1x"></i>
+              <i class="fa-solid fa-circle fa-stack-2x"></i>
+            </span>
+          </div>
+          <div class="col">
+            <h3>Service 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus neque vitae neque porta,
+              quis
+              dignissim mauris bibendum. Fusce accumsan erat in eros convallis, non.</p>
+          </div>
+        </article>
+
+        <article class="col-lg-4 row">
+          <div class="col-3">
+            <span class="fa-stack fa-2xl">
+              <i class="fa-regular fa-circle fa-stack-2x"></i>
+              <i class="fa-solid fa-code fa-stack-1x"></i>
+              <i class="fa-solid fa-circle fa-stack-2x"></i>
+            </span>
+          </div>
+          <div class="col">
+            <h3>Service 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus neque vitae neque porta,
+              quis
+              dignissim mauris bibendum. Fusce accumsan erat in eros convallis, non.</p>
+          </div>
+        </article>
+
+        <article class="col-lg-4 row">
+          <div class="col-3">
+            <span class="fa-stack fa-2xl">
+              <i class="fa-regular fa-circle fa-stack-2x"></i>
+              <i class="fa-solid fa-rss fa-stack-1x"></i>
+              <i class="fa-solid fa-circle fa-stack-2x"></i>
+            </span>
+          </div>
+          <div class="col">
+            <h3>Service 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus neque vitae neque porta,
+              quis
+              dignissim mauris bibendum. Fusce accumsan erat in eros convallis, non.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="row">
+
+        <article class="col-lg-4 row">
+          <div class="col-3">
+            <span class="fa-stack fa-2xl">
+              <i class="fa-regular fa-circle fa-stack-2x"></i>
+              <i class="fa-solid fa-earth-americas fa-stack-1x"></i>
+              <i class="fa-solid fa-circle fa-stack-2x"></i>
+            </span>
+          </div>
+          <div class="col">
+            <h3>Service 4</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus neque vitae neque porta,
+              quis
+              dignissim mauris bibendum. Fusce accumsan erat in eros convallis, non.</p>
+          </div>
+        </article>
+
+        <article class="col-lg-4 row">
+          <div class="col-3">
+            <span class="fa-stack fa-2xl">
+              <i class="fa-regular fa-circle fa-stack-2x"></i>
+              <i class="fa-solid fa-flag fa-stack-1x"></i>
+              <i class="fa-solid fa-circle fa-stack-2x"></i>
+            </span>
+          </div>
+          <div class="col">
+            <h3>Service 5</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus neque vitae neque porta,
+              quis
+              dignissim mauris bibendum. Fusce accumsan erat in eros convallis, non.</p>
+          </div>
+        </article>
+
+        <article class="col-lg-4 row">
+          <div class="col-3">
+            <span class="fa-stack fa-2xl">
+              <i class="fa-regular fa-circle fa-stack-2x"></i>
+              <i class="fa-solid fa-gear fa-stack-1x"></i>
+              <i class="fa-solid fa-circle fa-stack-2x"></i>
+            </span>
+          </div>
+          <div class="col">
+            <h3>Service 6</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus neque vitae neque porta,
+              quis
+              dignissim mauris bibendum. Fusce accumsan erat in eros convallis, non.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+    <!-- Parte David - Sección Portfolio -->
+    <section>
+      <div class="container Portfolio-Section">
+        <div class="row">
+          <div class="col">
+            <h2 class="Portfolio-h2"><a name="Portfolio" id="Portfolio"></a>Portfolio</h2>
+            <br />
+            <p class="text-center">There are success projects created by us </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container Portfolio-Section">
+        <div class="row gy-5" style="text-align: center">
+          <div class="col-md-4 col-sm-6 col-xs-12-center p-2">
+            <img class="Portfolio-Image" src="img/2.jpg" alt="Caja triste">
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12-center p-2">
+            <img class="Portfolio-Image" src="img/3.jpg" alt="Caja en taza">
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12-center p-2">
+            <img class="Portfolio-Image" src="img/4.jpg" alt="Caja en spa">
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12-center p-2">
+            <img class="Portfolio-Image" src="img/5.jpg" alt="Caja en WC">
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12-center p-2">
+            <img class="Portfolio-ImageSpecial" src="img/6.jpg" alt="Caja en banco">
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12-center p-2">
+            <img class="Portfolio-Image" src="img/7.jpg" alt="Cajka nueces">
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12-center p-2">
+            <img class="Portfolio-Image" src="img/8.jpg" alt="Caja spirit">
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12-center p-2">
+            <img class="Portfolio-Image" src="img/9.jpg" alt="Caja cookie">
+          </div>
+          <div class="col-md-4 col-sm-auto-center col-xs-1-center p-2">
+            <img class="Portfolio-Image" src="img/10.jpg" alt="Caja clean">
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Parte Antonio - Sección Contact -->
+    <section class="location-section container pt-5 pb-5">
+      <h2><a name="Location" id="Location"></a>Location</h2>
+      <p>You can find us</p>
+      <div class="row d-flex text-right justify-content-center align-items-center">
+        <div class="map col-md-10 col-xl-4 col-xxl-3">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.411255090315!2d2.1278793153474727!3d41.40859050264353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816c5cc995f%3A0xe6d45d60cbf71998!2sLa%20Salle%20Campus%20Barcelona-URL!5e0!3m2!1ses!2ses!4v1655051293460!5m2!1ses!2ses"
+            width="350" height="350" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-md-10 col-xl-4 col-xxl-3">
+          <h4 class="text-center text-xl-start">Head Office</h4>
+          <p class="text-center text-xl-start">
+            <br>
+            123456 Blank Street
+            <br>
+            Phone: <a href="tel:2456-134-321">2456-134-321</a>
+            <br>
+            Email Address: <a href="mailto:info@domain.com">info@domain.com</a>
+          </p>
+          <h4 class="text-center text-xl-start">Emea</h4>
+          <p class="text-center text-xl-start">
+            <br>
+            Carrer de Sant Joan de la Salle, 42
+            <br>
+            08022 Barcelona
+            <br>
+            Phone: <a href="tel:932 90 24 74">932 90 24 74</a>
+            <br>
+            Email Address: <a href="mailto:info@salleurl.edu">info@salleurl.edu</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Parte Rocío - Sección Email Us -->
+    <div class="container EmailUsForm">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <form>
+            <div class="row">
+              <h2><a name="EmailUs" id="EmailUs"></a>Email Us</h2>
+            </div>
+            <div class="row mb-3 align-items-center">
+              <label for="inputName" class="col-sm-2 col-form-label">Name:*</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputNom" required>
+              </div>
+            </div>
+            <div class="row mb-3 align-items-center">
+              <label for="inputEmail" class="col-sm-2 col-form-label">Email:*</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail" required>
+              </div>
+            </div>
+            <div class="row mb-3 align-items-center">
+              <label for="inputTelefon" class="col-sm-2 col-form-label">Phone:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputTelefon">
+              </div>
+            </div>
+            <div class="row mb-3 align-items-center">
+              <label for="inputSubject" class="col-sm-2 col-form-label">Subject:*</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputSubject" required>
+              </div>
+            </div>
+            <div class="row mb-3 align-items-center">
+              <label for="inputMessage" class="col-sm-2 col-form-label">Message:*</label>
+              <div class="col-sm-10">
+                <textarea id="inputMessage" class="form-control" rows="3" required></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-center">
+                <input type="submit" class="btn btn-light" value="Send">
+                <br>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+  </main>
+  <!-- Parte David Sección Footer -->
+
+  <div class="container Footer-Section">
+    <div class="row align-items-center">
+      <footer>
+        <br>
+        <p class="color-font">© 2016 - <a class="Footer-Link" href="https://www.salleurl.edu/es">LaSalle</a>. All Rights
+          Reserved.</p>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>

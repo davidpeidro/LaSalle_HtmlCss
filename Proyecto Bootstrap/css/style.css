@@ -1,0 +1,364 @@
+/* Parte común */
+:root {
+    --morado: rgba(97, 69, 140, 255);
+    --morado-fondo-form: rgba(121, 98, 158, 255);
+    --gris-h: rgba(78, 78, 78, 255);
+    --gris-p: rgba(135, 135, 135, 255);
+    --gris-circulo: rgba(211, 211, 211, 255);
+    --crema-fondo: rgba(242, 242, 242, 255);
+    --blanco-h1: rgba(255, 255, 255, 255);
+    --crema-banner: #eecb8a;
+}
+
+body {
+    font-family: 'Open Sans';
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--blanco-h1);
+    text-align: left;
+    margin: 0;
+    position: absolute;
+    bottom: 40%;
+    padding-left: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--gris-h);
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1.6rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: var(--gris-h);
+    font-weight: bold;
+}
+
+p {
+    color: var(--gris-p);
+}
+
+/* Parte Judit - Sección Header */
+
+@media only screen and (max-width: 768px) {
+    .banner {
+        background-image: url("../img/header-mini.png");
+        background-repeat: no-repeat;
+        background-size: cover, auto;
+        width: 100%;
+        height: 25rem;
+        background-position: 50%;
+        position: relative;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .banner {
+        background-image: url("../img/header.jpg");
+        background-repeat: no-repeat;
+        background-size: cover, auto;
+        width: 100%;
+        height: 25rem;
+        background-position: 50%;
+        position: relative;
+    }
+}
+
+.navbar-expand-lg {
+    background-color: var(--morado);
+}
+
+div .container {
+    background-color: var(--morado);
+}
+
+.nav-link {
+    font-size: 1rem;
+    color: var(--blanco-h1);
+}
+
+.navbar-toggler {
+    color: var(--blanco-h1);
+}
+
+header.container {
+    margin-bottom: 3rem;
+}
+
+
+
+/* Parte Lucía - Sección Who We Are */
+section.container-fluid.justify-content-center {
+    background-color: var(--crema-fondo);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.who {
+    justify-content: center;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 1.6rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.vhr {
+    border-right: 1px solid var(--gris-p);
+    height:580px;
+    width: 1px;
+    display: inline-block;
+    padding: 0%;
+}
+
+img#foto1 {
+    float: left;
+    margin-right: 0.5rem;
+}
+
+img#foto2 {
+    float: right;
+    margin-left: 0.5rem;
+}
+
+@media screen and (max-width:768px) {
+    img#foto2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:375px) {
+    img#foto2 {
+        display: none;
+    }
+}
+
+/* Parte Antonio - Sección Our Services */
+
+.services-section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.services-section p {
+    text-align: justify;
+}
+
+.services-section span>i:nth-child(1) {
+    color: var(--gris-circulo);
+    transition: color .5s;
+    transition-timing-function: ease-in-out;
+}
+
+.services-section span:hover :nth-child(1) {
+    display: none;
+}
+
+.services-section span>i:nth-child(2) {
+    color: var(--morado);
+    transition: color .5s;
+}
+
+.services-section span:hover :nth-child(2) {
+    color: white;
+}
+
+.services-section span>i:nth-child(3) {
+    color: white;
+    opacity: 0;
+    transition: opacity .5s ease-out;
+}
+
+.services-section span:hover :nth-child(3) {
+    opacity: 1;
+    z-index: -1;
+    color: var(--morado);
+}
+
+/* Parte David - Sección Portfolio */
+
+.Portfolio-Section {
+    background-color: var(--crema-fondo);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.Portfolio-Image {
+    height: 154px;
+    width: 240px;
+}
+
+.Portfolio-Image:hover {
+    transform: rotate(-20deg);
+    transition-duration: 1s;
+}
+
+
+.Portfolio-ImageSpecial {
+    height: 154px;
+    width: 240px;
+}
+
+.Portfolio-ImageSpecial:hover {
+    transform: rotate(360deg);
+    transition-duration: 1s;
+    border-radius: 260px;
+}
+
+/* Parte Antonio - Sección Location */
+
+.location-section h2 {
+    margin: 0;
+    width: 100%;
+}
+
+.location-section h4 {
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+}
+
+.location-section>p:nth-child(2) {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: var(--gris-h);
+}
+
+.location-section p {
+    width: 100%;
+    text-align: center;
+    color: var(--gris-h);
+}
+
+.location-section iframe {
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.map {
+    text-align: center;
+}
+
+/* Parte Rocío - Sección Email Us */
+
+.EmailUsForm {
+    background-color: #79629e;
+    background-image: url(../img/map-image.png);
+    background-size: 100%;
+}
+
+.EmailUsForm h2 {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-size: 2.5em;
+    font-weight: 550;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.EmailUsForm input[type="text"] {
+    padding: 0.5em;
+    border-radius: 5px;
+    border-color: white; 
+}
+
+.EmailUsForm textarea {
+    height: 50%;
+    padding: 0.5em;
+    border-radius: 5px;
+    border-color: white;
+}
+
+.EmailUsForm label {
+    text-align: left;
+    color: white;
+    font-size: 1.3em;
+}
+
+.EmailUsForm input[type="submit"] {
+    width: 11%;
+    font-size: 1em;
+    border-radius: 5px;
+    border-color: white;
+    padding: 0.1em;
+    margin: 1.5em; 
+}
+
+/* Parte David - Sección Footer */
+
+.Footer-Section {
+    background-color: var(--morado);
+    text-align: right;
+    color: rgba(255, 255, 255, 255);
+    border-color: var(--morado);
+    font-size: 0.8em;
+}
+
+.Footer-Link {
+    color: rgba(255, 255, 255, 255);
+}
+
+.color-font {
+    color: var(--blanco-h1);
+}
+
+
+/* Carrousel temps */
+
+.weather
+{
+    display:flex;
+    justify-content: space-evenly;
+    height: 3em;
+    text-align: start;
+    align-items: center;
+    background: var(--crema-banner);
+    /* El scroll se mantiene oculto, los divs hijos se mantienen*/
+    overflow: hidden;
+
+}
+
+/* a tots els divs fills (que contenen les dades trossejades), del div "pare" */
+div#divLocation,
+div#divImatge,
+div#divTemperatura,
+div#divTempMin,
+div#divTempMax,
+div#divHumitat
+{
+    animation-name: animation_weather ;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* Cada vez que termina el ciclo, la animacion se reinicia al.. y comienza desde el principio. Este es el comportamiento por defecto. */
+    animation-direction: normal;
+    position: relative;
+}
+
+@keyframes animation_weather {
+    0%{ right: -100%;}
+    100%{ right: 100%;}
+}
+
+#closeCarrousel {   
+    position:relative; 
+    vertical-align: top;
+    text-align: right;
+    /*display:inline;
+    padding:2px 5px;*/
+    background:var(--crema-banner);
+    cursor: pointer;
+    display:flex;
+  justify-content: flex-end;
+}
